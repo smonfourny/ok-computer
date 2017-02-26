@@ -1,3 +1,2 @@
-/manpages/*
-!/manpages/assignment.tex
-!/manpages/assignment.pdf
+/manpages/*.log
+/manpages/*.aux
