@@ -1,0 +1,34 @@
+<circuit name="PC_INC">
+    <a name="circuit" val="PC_INC"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(160,200)" to="(160,250)"/>
+    <wire from="(210,260)" to="(210,310)"/>
+    <wire from="(260,250)" to="(270,250)"/>
+    <wire from="(260,200)" to="(270,200)"/>
+    <wire from="(160,200)" to="(170,200)"/>
+    <wire from="(160,250)" to="(170,250)"/>
+    <wire from="(260,250)" to="(260,330)"/>
+    <wire from="(250,330)" to="(260,330)"/>
+    <wire from="(270,200)" to="(270,250)"/>
+    <wire from="(170,310)" to="(210,310)"/>
+    <wire from="(210,160)" to="(210,190)"/>
+    <comp loc="(260,250)" name="DATA_BYTE">
+      <a name="label" val="PC"/>
+    </comp>
+    <comp lib="6" loc="(226,181)" name="Text">
+      <a name="text" val="INC"/>
+    </comp>
+    <comp lib="0" loc="(250,330)" name="Probe">
+      <a name="radix" val="10signed"/>
+    </comp>
+    <comp lib="0" loc="(170,310)" name="Clock"/>
+    <comp loc="(170,200)" name="INC">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(210,160)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+    </comp>
+  </circuit>
