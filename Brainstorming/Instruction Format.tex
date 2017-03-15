@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage{tabularx}
+\begin{document}
+\section{Instruction Format}
+Op-Code is 4 bits long:
+\begin{enumerate}
+\item LOAD: LD\\
+  \begin{tabularx}{\textwidth}{|X|X|X|}
+    \hline 000 & x & xxxx
+    \\ \hline Op-Code & Register & Address
+    \\ \hline 0-2 & 3 & 4-7
+    \\ \hline
+  \end{tabularx}
+
+\item STORE: STR\\
+  \begin{tabularx}{\textwidth}{|X|X|X|}
+    \hline 111 & x & xxxx
+    \\ \hline Op-Code & Register & Address
+    \\ \hline 0-2 & 3 & 4-7
+    \\ \hline
+  \end{tabularx}
+
+\item ADD: ADD\\
+  \begin{tabularx}{\textwidth}{|X|X|}
+    \hline 0010 & x
+    \\ \hline Op-Code & Register to store into
+    \\ \hline 0-3 & 4
+    \\ \hline
+  \end{tabularx}
+
+\item SUBTRACT: SUB\\
+  \begin{tabularx}{\textwidth}{|X|X|}
+    \hline 0011 & x
+    \\ \hline Op-Code & Register to store into
+    \\ \hline 0-3 & 4
+    \\ \hline
+  \end{tabularx}
+  
+\item Branch equal: BEQ\\
+  \begin{tabularx}{\textwidth}{|X|X|}
+    \hline 0100 & x
+    \\ \hline Op-Code & Address
+    \\ \hline 0-3 & 4-7
+    \\ \hline
+  \end{tabularx}
+  
+\item Branc not equal: BNQ\\
+  \begin{tabularx}{\textwidth}{|X|X|}
+    \hline 0101 & x
+    \\ \hline Op-Code & Address
+    \\ \hline 0-3 & 4-7
+    \\ \hline
+  \end{tabularx}
+
+\item PRINT: PRT\\
+  \begin{tabularx}{\textwidth}{|X|X|}
+    \hline 0110 & x
+    \\ \hline Op-Code & Register to display
+    \\ \hline 0-3 & 4
+    \\ \hline
+  \end{tabularx}
+
+\item INPUT: INP\\
+  \begin{tabularx}{\textwidth}{|X|X|}
+    \hline 0111 & x
+    \\ \hline Op-Code & Register to store into
+    \\ \hline 0-3 & 4
+    \\ \hline
+  \end{tabularx}
+
+\item STOP: STOP\\
+  \begin{tabularx}{\textwidth}{|X|}
+    \hline 1000
+    \\ \hline Op-Code
+    \\ \hline 0-3
+    \\ \hline
+  \end{tabularx}
+
+\item MULTIPLICATION: MULT\\
+  \begin{tabularx}{\textwidth}{|X|X|X|}
+    \hline 1001 & x & xxx
+    \\ \hline Op-Code & Register to store into & Constant
+    \\ \hline 0-3 & 4 & 5-7
+    \\ \hline
+  \end{tabularx}
+  
+\end{enumerate}
+\end{document}
