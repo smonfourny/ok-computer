@@ -4,6 +4,26 @@
 
 RAM contents:
 
+0000	0111 0000 # Load input into D0
+0001	0101 0111 # If D0 isn't 0, go to prog loop
+0010	1000 0000 # STOP, ends execution of program
+0011	0000 0000 # Will store counter the we'll increment
+0100	0000 0000 # Where we'll store answer
+0101	0000 0110 # Number we want to multiply by, 6 as example
+0110	0000 0001 # 1 for incrementing
+Prog:
+0111	1010 0100 # Load current answer into D0
+1000	1011 0101 # Load number we want to multiply by into D1
+1001	0010 0000 # D0=D0+D1
+1010	0110 0000 # Prints current answer
+1011	1110 0100 # Store D0 into current answer
+1100	1010 0011 # Load counter into D0
+1101	1011 0110 # Load one into D1
+1110	0010 0000 # D0=D0+D1, increment counter
+1111	1110 0011 # Store D0 into counter
+Rely on natural looping of CPU
+
+SCRAPPED -------------------
 0000	1010 1100 # Load current answer into D0
 0001	0111 1000 # Take input in D1
 0010	0010 0000 # D0=D0+D1
@@ -22,3 +42,4 @@ RAM contents:
 1101	0000 0001 # One, used to decrement
 1110	0000 0000 # Zero, used to compare things and reset vals
 1111	0000 0110 # Number we want to multiply by, 6 as example
+
