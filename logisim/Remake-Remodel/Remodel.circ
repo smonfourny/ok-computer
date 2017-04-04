@@ -169,6 +169,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(870,1000)" to="(970,1000)"/>
     <wire from="(310,1240)" to="(310,1260)"/>
     <wire from="(1630,960)" to="(1630,970)"/>
+    <wire from="(90,60)" to="(90,80)"/>
     <wire from="(1570,1300)" to="(1620,1300)"/>
     <wire from="(1110,1190)" to="(1360,1190)"/>
     <wire from="(1100,1180)" to="(1350,1180)"/>
@@ -337,6 +338,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(780,1480)" to="(1160,1480)"/>
     <wire from="(490,1030)" to="(540,1030)"/>
     <wire from="(1930,1110)" to="(1930,1130)"/>
+    <wire from="(90,60)" to="(530,60)"/>
     <wire from="(640,370)" to="(700,370)"/>
     <wire from="(730,1540)" to="(730,1610)"/>
     <wire from="(1110,290)" to="(1110,320)"/>
@@ -653,7 +655,6 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(710,1600)" to="(710,1620)"/>
     <wire from="(1470,400)" to="(1480,400)"/>
     <wire from="(570,20)" to="(570,60)"/>
-    <wire from="(180,60)" to="(530,60)"/>
     <wire from="(1350,280)" to="(1360,280)"/>
     <wire from="(1840,1230)" to="(1970,1230)"/>
     <wire from="(1700,1210)" to="(1700,1400)"/>
