@@ -13,6 +13,13 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <tool name="Probe">
       <a name="facing" val="north"/>
     </tool>
+    <tool name="Clock">
+      <a name="facing" val="south"/>
+    </tool>
+    <tool name="Constant">
+      <a name="facing" val="south"/>
+      <a name="value" val="0x0"/>
+    </tool>
   </lib>
   <lib desc="#Gates" name="1"/>
   <lib desc="#Plexers" name="2">
@@ -97,6 +104,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(490,640)" to="(490,1000)"/>
     <wire from="(910,370)" to="(1040,370)"/>
     <wire from="(880,240)" to="(880,300)"/>
+    <wire from="(2280,730)" to="(2280,1200)"/>
     <wire from="(2010,710)" to="(2230,710)"/>
     <wire from="(2580,210)" to="(2580,300)"/>
     <wire from="(1440,480)" to="(1440,520)"/>
@@ -130,6 +138,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(1430,560)" to="(1440,560)"/>
     <wire from="(580,1230)" to="(2390,1230)"/>
     <wire from="(1100,390)" to="(1110,390)"/>
+    <wire from="(650,1050)" to="(670,1050)"/>
     <wire from="(440,720)" to="(650,720)"/>
     <wire from="(1030,300)" to="(1060,300)"/>
     <wire from="(1330,530)" to="(1400,530)"/>
@@ -141,6 +150,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(250,340)" to="(260,340)"/>
     <wire from="(250,180)" to="(260,180)"/>
     <wire from="(550,540)" to="(630,540)"/>
+    <wire from="(660,1070)" to="(670,1070)"/>
     <wire from="(690,310)" to="(690,320)"/>
     <wire from="(870,280)" to="(1880,280)"/>
     <wire from="(170,590)" to="(170,600)"/>
@@ -338,6 +348,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(670,780)" to="(670,820)"/>
     <wire from="(1010,440)" to="(2110,440)"/>
     <wire from="(140,200)" to="(160,200)"/>
+    <wire from="(2500,740)" to="(2500,1210)"/>
     <wire from="(610,1250)" to="(2410,1250)"/>
     <wire from="(140,210)" to="(150,210)"/>
     <wire from="(1420,570)" to="(1950,570)"/>
@@ -349,6 +360,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(190,430)" to="(190,440)"/>
     <wire from="(220,140)" to="(220,150)"/>
     <wire from="(2530,640)" to="(2530,1260)"/>
+    <wire from="(650,1210)" to="(2500,1210)"/>
     <wire from="(2520,640)" to="(2530,640)"/>
     <wire from="(440,1060)" to="(610,1060)"/>
     <wire from="(2390,860)" to="(2390,1230)"/>
@@ -392,6 +404,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(1230,340)" to="(1310,340)"/>
     <wire from="(1420,470)" to="(1430,470)"/>
     <wire from="(450,1050)" to="(610,1050)"/>
+    <wire from="(2540,600)" to="(2540,800)"/>
     <wire from="(700,780)" to="(2520,780)"/>
     <wire from="(250,580)" to="(260,580)"/>
     <wire from="(250,740)" to="(260,740)"/>
@@ -417,6 +430,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(1290,310)" to="(1300,310)"/>
     <wire from="(160,200)" to="(160,620)"/>
     <wire from="(870,300)" to="(870,790)"/>
+    <wire from="(650,1050)" to="(650,1210)"/>
     <wire from="(580,1180)" to="(610,1180)"/>
     <wire from="(2530,630)" to="(2530,640)"/>
     <wire from="(2080,270)" to="(2080,510)"/>
@@ -437,11 +451,11 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(510,980)" to="(610,980)"/>
     <wire from="(540,550)" to="(540,950)"/>
     <wire from="(1310,340)" to="(1310,350)"/>
+    <wire from="(330,360)" to="(620,360)"/>
     <wire from="(330,520)" to="(620,520)"/>
     <wire from="(1130,480)" to="(1130,490)"/>
     <wire from="(330,680)" to="(620,680)"/>
     <wire from="(330,200)" to="(620,200)"/>
-    <wire from="(330,360)" to="(620,360)"/>
     <wire from="(1330,520)" to="(1330,530)"/>
     <wire from="(590,1170)" to="(610,1170)"/>
     <wire from="(650,440)" to="(990,440)"/>
@@ -500,6 +514,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(150,720)" to="(150,730)"/>
     <wire from="(190,440)" to="(190,450)"/>
     <wire from="(220,150)" to="(220,160)"/>
+    <wire from="(2520,800)" to="(2540,800)"/>
     <wire from="(460,700)" to="(460,1030)"/>
     <wire from="(1310,350)" to="(1370,350)"/>
     <wire from="(1950,340)" to="(1950,480)"/>
@@ -532,6 +547,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(250,500)" to="(250,580)"/>
     <wire from="(250,660)" to="(250,740)"/>
     <wire from="(1420,520)" to="(1420,530)"/>
+    <wire from="(660,1200)" to="(2280,1200)"/>
     <wire from="(1930,340)" to="(1950,340)"/>
     <wire from="(1280,500)" to="(1950,500)"/>
     <wire from="(540,950)" to="(610,950)"/>
@@ -543,10 +559,12 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(1400,840)" to="(2340,840)"/>
     <wire from="(340,840)" to="(340,1160)"/>
     <wire from="(160,670)" to="(160,680)"/>
+    <wire from="(660,1070)" to="(660,1200)"/>
     <wire from="(190,380)" to="(190,390)"/>
     <wire from="(210,240)" to="(210,250)"/>
     <wire from="(560,480)" to="(560,930)"/>
     <wire from="(2320,860)" to="(2340,860)"/>
+    <wire from="(2530,600)" to="(2540,600)"/>
     <wire from="(410,750)" to="(410,1090)"/>
     <wire from="(670,540)" to="(670,570)"/>
     <wire from="(670,220)" to="(670,250)"/>
@@ -570,53 +588,19 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(670,1080)" to="(670,1260)"/>
     <wire from="(2080,270)" to="(2560,270)"/>
     <wire from="(470,660)" to="(670,660)"/>
-    <comp lib="0" loc="(230,300)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="8"/>
-      <a name="incoming" val="8"/>
-      <a name="appear" val="right"/>
+    <comp loc="(2250,540)" name="Full_Adder">
+      <a name="label" val="A5_2"/>
     </comp>
-    <comp loc="(2410,630)" name="Full_Adder">
-      <a name="label" val="A5_C_1"/>
-    </comp>
-    <comp lib="1" loc="(660,1040)" name="OR Gate">
-      <a name="inputs" val="32"/>
-      <a name="label" val="OVERFLOW"/>
-    </comp>
-    <comp lib="0" loc="(620,290)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="fanout" val="8"/>
-      <a name="incoming" val="8"/>
-    </comp>
-    <comp lib="1" loc="(330,600)" name="AND Gate">
-      <a name="width" val="8"/>
-      <a name="size" val="70"/>
-      <a name="label" val="M5"/>
-    </comp>
-    <comp loc="(2080,510)" name="Full_Adder">
-      <a name="label" val="A4_2"/>
-    </comp>
-    <comp loc="(1420,470)" name="Full_Adder">
-      <a name="label" val="A2_C"/>
+    <comp lib="1" loc="(720,1060)" name="OR Gate">
+      <a name="inputs" val="4"/>
     </comp>
     <comp lib="1" loc="(330,680)" name="AND Gate">
       <a name="width" val="8"/>
       <a name="size" val="70"/>
       <a name="label" val="M6"/>
     </comp>
-    <comp lib="0" loc="(620,200)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="fanout" val="8"/>
-      <a name="incoming" val="8"/>
-    </comp>
-    <comp loc="(2160,350)" name="Full_Adder">
-      <a name="label" val="A5_0"/>
-    </comp>
-    <comp loc="(2250,540)" name="Full_Adder">
-      <a name="label" val="A5_2"/>
-    </comp>
-    <comp loc="(2500,700)" name="Full_Adder">
-      <a name="label" val="A6_2"/>
+    <comp loc="(2150,650)" name="Full_Adder">
+      <a name="label" val="A4_C_1"/>
     </comp>
     <comp lib="0" loc="(2580,300)" name="Splitter">
       <a name="facing" val="west"/>
@@ -624,35 +608,46 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="incoming" val="8"/>
       <a name="appear" val="right"/>
     </comp>
-    <comp lib="0" loc="(1030,30)" name="Probe">
-      <a name="facing" val="south"/>
-      <a name="radix" val="10unsigned"/>
-    </comp>
-    <comp lib="0" loc="(750,1060)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="OVERFLOW"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(120,90)" name="Pin">
+    <comp lib="1" loc="(330,600)" name="AND Gate">
       <a name="width" val="8"/>
-      <a name="label" val="IN_0"/>
-      <a name="labelloc" val="north"/>
+      <a name="size" val="70"/>
+      <a name="label" val="M5"/>
     </comp>
-    <comp lib="0" loc="(180,700)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="8"/>
-      <a name="incoming" val="8"/>
-      <a name="appear" val="right"/>
+    <comp loc="(2160,350)" name="Full_Adder">
+      <a name="label" val="A5_0"/>
     </comp>
-    <comp loc="(1100,360)" name="Half_Adder">
-      <a name="label" val="A1_1"/>
+    <comp loc="(2390,820)" name="Full_Adder">
+      <a name="label" val="A6_1"/>
     </comp>
-    <comp lib="1" loc="(720,1060)" name="OR Gate"/>
     <comp lib="1" loc="(330,520)" name="AND Gate">
       <a name="width" val="8"/>
       <a name="size" val="70"/>
       <a name="label" val="M4"/>
+    </comp>
+    <comp loc="(1150,390)" name="Half_Adder">
+      <a name="label" val="A1_C"/>
+    </comp>
+    <comp loc="(1490,520)" name="Full_Adder">
+      <a name="label" val="A3_1"/>
+    </comp>
+    <comp loc="(1030,300)" name="Full_Adder">
+      <a name="label" val="A1_0"/>
+    </comp>
+    <comp loc="(2080,510)" name="Full_Adder">
+      <a name="label" val="A4_2"/>
+    </comp>
+    <comp lib="1" loc="(330,760)" name="AND Gate">
+      <a name="width" val="8"/>
+      <a name="size" val="70"/>
+      <a name="label" val="M7"/>
+    </comp>
+    <comp lib="0" loc="(620,200)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp loc="(1840,530)" name="Half_Adder">
+      <a name="label" val="A3_C_1"/>
     </comp>
     <comp lib="0" loc="(210,460)" name="Splitter">
       <a name="facing" val="west"/>
@@ -660,53 +655,60 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="incoming" val="8"/>
       <a name="appear" val="right"/>
     </comp>
+    <comp loc="(2500,700)" name="Full_Adder">
+      <a name="label" val="A6_2"/>
+    </comp>
+    <comp loc="(2010,650)" name="Full_Adder">
+      <a name="label" val="A4_C_0"/>
+    </comp>
+    <comp loc="(1290,310)" name="Full_Adder">
+      <a name="label" val="A2_0"/>
+    </comp>
+    <comp loc="(1420,470)" name="Full_Adder">
+      <a name="label" val="A2_C"/>
+    </comp>
     <comp lib="0" loc="(620,680)" name="Splitter">
       <a name="facing" val="south"/>
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
     </comp>
-    <comp loc="(1150,390)" name="Half_Adder">
-      <a name="label" val="A1_C"/>
+    <comp loc="(2000,480)" name="Full_Adder">
+      <a name="label" val="A4_1"/>
     </comp>
-    <comp lib="0" loc="(190,620)" name="Splitter">
+    <comp lib="1" loc="(330,280)" name="AND Gate">
+      <a name="width" val="8"/>
+      <a name="size" val="70"/>
+      <a name="label" val="M1"/>
+    </comp>
+    <comp lib="0" loc="(230,300)" name="Splitter">
       <a name="facing" val="west"/>
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
       <a name="appear" val="right"/>
     </comp>
-    <comp loc="(1600,490)" name="Half_Adder">
-      <a name="label" val="A3_2"/>
+    <comp loc="(940,240)" name="Half_Adder">
+      <a name="label" val="A0"/>
+    </comp>
+    <comp lib="0" loc="(620,760)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(130,60)" name="Probe">
+      <a name="facing" val="south"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(120,130)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="label" val="IN_1"/>
+      <a name="labelloc" val="north"/>
     </comp>
     <comp lib="0" loc="(620,520)" name="Splitter">
       <a name="facing" val="south"/>
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
     </comp>
-    <comp loc="(2150,650)" name="Full_Adder">
-      <a name="label" val="A4_C_1"/>
-    </comp>
-    <comp lib="0" loc="(620,600)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="fanout" val="8"/>
-      <a name="incoming" val="8"/>
-    </comp>
-    <comp lib="1" loc="(330,440)" name="AND Gate">
-      <a name="width" val="8"/>
-      <a name="size" val="70"/>
-      <a name="label" val="M3"/>
-    </comp>
-    <comp loc="(2280,690)" name="Full_Adder">
-      <a name="label" val="A5_C_0"/>
-    </comp>
-    <comp loc="(1490,520)" name="Full_Adder">
-      <a name="label" val="A3_1"/>
-    </comp>
-    <comp lib="1" loc="(330,200)" name="AND Gate">
-      <a name="width" val="8"/>
-      <a name="size" val="70"/>
-      <a name="label" val="M0"/>
-    </comp>
-    <comp lib="0" loc="(220,380)" name="Splitter">
+    <comp lib="0" loc="(170,780)" name="Splitter">
       <a name="facing" val="west"/>
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
@@ -718,23 +720,28 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="incoming" val="8"/>
       <a name="appear" val="right"/>
     </comp>
-    <comp lib="0" loc="(120,120)" name="Probe">
-      <a name="facing" val="south"/>
-      <a name="radix" val="10unsigned"/>
-    </comp>
-    <comp lib="1" loc="(330,280)" name="AND Gate">
-      <a name="width" val="8"/>
-      <a name="size" val="70"/>
-      <a name="label" val="M1"/>
-    </comp>
-    <comp loc="(2570,760)" name="Full_Adder">
-      <a name="label" val="A6_3"/>
-    </comp>
-    <comp lib="0" loc="(240,220)" name="Splitter">
-      <a name="facing" val="west"/>
+    <comp lib="0" loc="(120,130)" name="Splitter">
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
       <a name="appear" val="right"/>
+    </comp>
+    <comp loc="(1420,330)" name="Full_Adder">
+      <a name="label" val="A3_0"/>
+    </comp>
+    <comp lib="0" loc="(620,290)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp loc="(1350,380)" name="Full_Adder">
+      <a name="label" val="A2_1"/>
+    </comp>
+    <comp loc="(2280,690)" name="Full_Adder">
+      <a name="label" val="A5_C_0"/>
+    </comp>
+    <comp lib="0" loc="(1030,30)" name="Probe">
+      <a name="facing" val="south"/>
+      <a name="radix" val="10unsigned"/>
     </comp>
     <comp lib="0" loc="(1030,50)" name="Pin">
       <a name="facing" val="west"/>
@@ -743,75 +750,85 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="label" val="ANS"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp loc="(2000,480)" name="Full_Adder">
-      <a name="label" val="A4_1"/>
+    <comp loc="(2310,790)" name="Full_Adder">
+      <a name="label" val="A6_0"/>
     </comp>
-    <comp loc="(940,240)" name="Half_Adder">
-      <a name="label" val="A0"/>
-    </comp>
-    <comp lib="0" loc="(620,440)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="fanout" val="8"/>
-      <a name="incoming" val="8"/>
-    </comp>
-    <comp loc="(1030,300)" name="Full_Adder">
-      <a name="label" val="A1_0"/>
-    </comp>
-    <comp loc="(2010,650)" name="Full_Adder">
-      <a name="label" val="A4_C_0"/>
-    </comp>
-    <comp lib="1" loc="(330,760)" name="AND Gate">
+    <comp lib="1" loc="(330,440)" name="AND Gate">
       <a name="width" val="8"/>
       <a name="size" val="70"/>
-      <a name="label" val="M7"/>
+      <a name="label" val="M3"/>
+    </comp>
+    <comp loc="(1600,490)" name="Half_Adder">
+      <a name="label" val="A3_2"/>
+    </comp>
+    <comp lib="1" loc="(330,200)" name="AND Gate">
+      <a name="width" val="8"/>
+      <a name="size" val="70"/>
+      <a name="label" val="M0"/>
+    </comp>
+    <comp loc="(2410,630)" name="Full_Adder">
+      <a name="label" val="A5_C_1"/>
+    </comp>
+    <comp lib="0" loc="(120,90)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="label" val="IN_0"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp loc="(2530,600)" name="Half_Adder">
+      <a name="label" val="A5_C_2"/>
     </comp>
     <comp lib="1" loc="(330,360)" name="AND Gate">
       <a name="width" val="8"/>
       <a name="size" val="70"/>
       <a name="label" val="M2"/>
     </comp>
-    <comp loc="(2330,620)" name="Half_Adder">
-      <a name="label" val="A5_3"/>
-    </comp>
-    <comp loc="(2530,600)" name="Half_Adder">
-      <a name="label" val="A5_C_2"/>
-    </comp>
-    <comp loc="(1350,380)" name="Full_Adder">
-      <a name="label" val="A2_1"/>
-    </comp>
-    <comp lib="0" loc="(120,130)" name="Splitter">
+    <comp lib="0" loc="(180,700)" name="Splitter">
+      <a name="facing" val="west"/>
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
       <a name="appear" val="right"/>
     </comp>
-    <comp loc="(1930,340)" name="Full_Adder">
-      <a name="label" val="A4_0"/>
+    <comp loc="(1100,360)" name="Half_Adder">
+      <a name="label" val="A1_1"/>
     </comp>
-    <comp loc="(2390,820)" name="Full_Adder">
-      <a name="label" val="A6_1"/>
+    <comp lib="0" loc="(240,220)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+      <a name="appear" val="right"/>
     </comp>
-    <comp loc="(1420,330)" name="Full_Adder">
-      <a name="label" val="A3_0"/>
-    </comp>
-    <comp loc="(1840,530)" name="Half_Adder">
-      <a name="label" val="A3_C_1"/>
-    </comp>
-    <comp lib="0" loc="(130,60)" name="Probe">
+    <comp lib="0" loc="(120,120)" name="Probe">
       <a name="facing" val="south"/>
       <a name="radix" val="10unsigned"/>
     </comp>
-    <comp loc="(2170,560)" name="Full_Adder">
-      <a name="label" val="A5_1"/>
+    <comp lib="0" loc="(750,1060)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="OVERFLOW"/>
+      <a name="labelloc" val="east"/>
     </comp>
-    <comp loc="(1290,310)" name="Full_Adder">
-      <a name="label" val="A2_0"/>
+    <comp loc="(2570,760)" name="Full_Adder">
+      <a name="label" val="A6_3"/>
     </comp>
-    <comp lib="0" loc="(120,130)" name="Pin">
-      <a name="width" val="8"/>
-      <a name="label" val="IN_1"/>
-      <a name="labelloc" val="north"/>
+    <comp loc="(1930,340)" name="Full_Adder">
+      <a name="label" val="A4_0"/>
     </comp>
     <comp lib="0" loc="(620,370)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(220,380)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+      <a name="appear" val="right"/>
+    </comp>
+    <comp lib="1" loc="(660,1040)" name="OR Gate">
+      <a name="inputs" val="32"/>
+      <a name="label" val="OVERFLOW"/>
+    </comp>
+    <comp lib="0" loc="(620,600)" name="Splitter">
       <a name="facing" val="south"/>
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
@@ -819,19 +836,22 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <comp loc="(1710,490)" name="Full_Adder">
       <a name="label" val="A3_C_0"/>
     </comp>
-    <comp lib="0" loc="(170,780)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="8"/>
-      <a name="incoming" val="8"/>
-      <a name="appear" val="right"/>
-    </comp>
-    <comp lib="0" loc="(620,760)" name="Splitter">
+    <comp lib="0" loc="(620,440)" name="Splitter">
       <a name="facing" val="south"/>
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
     </comp>
-    <comp loc="(2310,790)" name="Full_Adder">
-      <a name="label" val="A6_0"/>
+    <comp loc="(2170,560)" name="Full_Adder">
+      <a name="label" val="A5_1"/>
+    </comp>
+    <comp loc="(2330,620)" name="Half_Adder">
+      <a name="label" val="A5_3"/>
+    </comp>
+    <comp lib="0" loc="(190,620)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+      <a name="appear" val="right"/>
     </comp>
   </circuit>
   <circuit name="Half_Adder">
@@ -869,21 +889,18 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(190,160)" to="(230,160)"/>
     <wire from="(130,170)" to="(130,200)"/>
     <wire from="(120,150)" to="(120,180)"/>
-    <comp lib="0" loc="(310,200)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="C_Out"/>
-      <a name="labelloc" val="east"/>
-    </comp>
     <comp lib="0" loc="(110,150)" name="Pin">
       <a name="label" val="A"/>
+    </comp>
+    <comp lib="1" loc="(190,190)" name="OR Gate">
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(190,160)" name="AND Gate">
+      <a name="size" val="30"/>
     </comp>
     <comp lib="1" loc="(280,170)" name="AND Gate">
       <a name="size" val="30"/>
       <a name="negate0" val="true"/>
-    </comp>
-    <comp lib="1" loc="(190,190)" name="OR Gate">
-      <a name="size" val="30"/>
     </comp>
     <comp lib="0" loc="(310,170)" name="Pin">
       <a name="facing" val="west"/>
@@ -894,8 +911,11 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <comp lib="0" loc="(110,170)" name="Pin">
       <a name="label" val="B"/>
     </comp>
-    <comp lib="1" loc="(190,160)" name="AND Gate">
-      <a name="size" val="30"/>
+    <comp lib="0" loc="(310,200)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="C_Out"/>
+      <a name="labelloc" val="east"/>
     </comp>
   </circuit>
   <circuit name="Full_Adder">
@@ -966,6 +986,20 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(220,110)" to="(230,110)"/>
     <wire from="(120,150)" to="(130,150)"/>
     <wire from="(130,70)" to="(130,130)"/>
+    <comp lib="1" loc="(200,120)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="label" val="A_B"/>
+    </comp>
+    <comp lib="0" loc="(120,150)" name="Pin">
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="1" loc="(200,180)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="label" val="B_C"/>
+    </comp>
+    <comp lib="1" loc="(360,90)" name="AND Gate">
+      <a name="size" val="30"/>
+    </comp>
     <comp lib="1" loc="(270,100)" name="AND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="3"/>
@@ -973,26 +1007,8 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="negate1" val="true"/>
       <a name="negate2" val="true"/>
     </comp>
-    <comp lib="1" loc="(360,90)" name="AND Gate">
-      <a name="size" val="30"/>
-    </comp>
-    <comp lib="1" loc="(200,150)" name="AND Gate">
-      <a name="size" val="30"/>
-      <a name="label" val="A_C"/>
-    </comp>
     <comp lib="0" loc="(120,110)" name="Pin">
       <a name="label" val="A"/>
-    </comp>
-    <comp lib="0" loc="(120,190)" name="Pin">
-      <a name="label" val="C_In"/>
-    </comp>
-    <comp lib="1" loc="(340,170)" name="OR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="3"/>
-    </comp>
-    <comp lib="1" loc="(200,120)" name="AND Gate">
-      <a name="size" val="30"/>
-      <a name="label" val="A_B"/>
     </comp>
     <comp lib="0" loc="(420,80)" name="Pin">
       <a name="facing" val="west"/>
@@ -1000,14 +1016,10 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="label" val="R"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(120,150)" name="Pin">
-      <a name="label" val="B"/>
+    <comp lib="0" loc="(120,190)" name="Pin">
+      <a name="label" val="C_In"/>
     </comp>
-    <comp lib="1" loc="(270,70)" name="OR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="3"/>
-    </comp>
-    <comp lib="1" loc="(270,40)" name="AND Gate">
+    <comp lib="1" loc="(340,170)" name="OR Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="3"/>
     </comp>
@@ -1020,9 +1032,17 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="label" val="C_Out"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="1" loc="(200,180)" name="AND Gate">
+    <comp lib="1" loc="(270,40)" name="AND Gate">
       <a name="size" val="30"/>
-      <a name="label" val="B_C"/>
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="1" loc="(270,70)" name="OR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="1" loc="(200,150)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="label" val="A_C"/>
     </comp>
   </circuit>
 </project>
