@@ -4,10 +4,15 @@ MR, AR
 MAR, MBR
 D0, D1
 PC
-Display Companion Register changed from "DATA_BYTE" to new type: "DATA_BYTE_DISPLAY", which takes the On/Off
+IR
+Display Companion Register changed from "DATA_BYTE" to new type: "DATA_BYTE_ONOFF", which takes the On/Off
 
 Clock is restricted
 CU can only be turned on when computer is on
 
 Note: right now the computer is "off" when the On/Off switch is set to 1: maybe consider inverting this? (Just put a NOT gate)
 Note: All affected components have a new input, marked O/O.
+
+Change on 10:36 PM:
+	Added IR
+	DATA_BYTE_DISPLAY changed to DATA_BYTE_ONOFF, also used for IR
