@@ -4,9 +4,17 @@
 \section{Instruction Format}
 Op-Code is 4 bits long:
 \begin{enumerate}
+\item (CYCLE)\\
+\begin{tabularx}{\textwidth}{|X|}
+	\hline 000
+	\\ \hline Op-Code
+	\\ \hline 0-2
+	\\ \hline
+\end{tabularx}
+
 \item LOAD: LD\\
   \begin{tabularx}{\textwidth}{|X|X|X|}
-    \hline 000 & x & xxxx
+    \hline 101 & x & xxxx
     \\ \hline Op-Code & Register & Address
     \\ \hline 0-2 & 3 & 4-7
     \\ \hline
