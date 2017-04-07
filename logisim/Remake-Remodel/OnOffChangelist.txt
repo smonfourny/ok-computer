@@ -23,3 +23,7 @@ Change on 04/06 8:41 AM:
 	
 Change on 04/07 2:04 PM:
 	Two RAM bytes were not connected
+	
+	
+Change on 04/07 3:42 PM:
+	Added STATUS register. Also, I tested it and it seems to work.
