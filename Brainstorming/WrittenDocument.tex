@@ -1,0 +1,158 @@
+\documentclass{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{tabularx}
+
+\title{The OK-Computer}
+\date{April 10\textsuperscript{th}, 2017}
+\author{
+	\textsc{Julian Lore}\\
+	\textsc{Sandrine Monfourny-Daigneault}\\
+	\textsc{Jacques Vincent}\\
+}
+
+\begin{document}
+	\pagenumbering{gobble}
+	\maketitle
+	\newpage
+	\pagenumbering{arabic}
+	\markright{Lore, Monfourny-Daigneault, Vincent: The OK-Computer}
+	\pagestyle{myheadings}
+	\section{Assembler Program}
+	\# What this program does:
+	\\* \# Multiplies (using adder in a loop) a number from RAM and a number from input buffer (keypad), answer displayed on display
+	\\* \# Assume 1111 is the RAM value that stores the number we want to multiply by
+	\\*
+	\begin{tabular}{|c|c|l|}
+	\hline RAM Adress & RAM contents & Description
+	\\* \hline 	0000	& 0111 1000 & \# Load input into D1
+	\\* \hline 	0001	& 0101 0111 & \# If D0 isn't 0, go to prog loop
+	\\* \hline 	0010	& 1000 0000 & \# STOP, ends execution of program
+	\\* \hline 	0011	& 0000 0000 & \# Will store counter the we'll increment
+	\\* \hline 	0100	& 0000 0000 & \# Where we'll store answer
+	\\* \hline 	0101	& 0000 0110 & \# Number we want to multiply by, 6 as example
+	\\* \hline 	0110	& 0000 0001 & \# 1 for incrementing
+	\\ \hline
+	\end{tabular}
+	\\*
+	\\* Prog:
+	\\*
+	\begin{tabular}{|c|c|l|}
+	\hline RAM Adress & RAM contents & Description
+	\\* \hline 	0111	& 1010 0100 & \# Load current answer into D0
+	\\* \hline 	1000	& 1011 0101 & \# Load number we want to multiply by into D1
+	\\* \hline 	1001	& 0010 0000 & \# D0=D0+D1
+	\\* \hline 	1010	& 0110 0000 & \# Prints current answer
+	\\* \hline 	1011	& 1110 0100 & \# Store D0 into current answer
+	\\* \hline 	1100	& 1010 0011 & \# Load counter into D0
+	\\* \hline 	1101	& 1011 0110 & \# Load one into D1
+	\\* \hline 	1110	& 0010 0000 & \# D0=D0+D1, increment counter
+	\\* \hline 	1111	& 1110 0011 & \# Store D0 into counter
+	\\ \hline
+	\end{tabular}
+	\\*
+	\\* Rely on natural looping of CPU
+	\\*
+	\section{Description of Instructions}
+	\begin{enumerate}
+\item (CYCLE)\\
+\begin{tabularx}{\textwidth}{|X|}
+	\hline 000
+	\\ \hline Op-Code
+	\\ \hline 0-2
+	\\ \hline
+\end{tabularx}
+Not a real instruction (in the sense that it isn't a part of any program), it's what the CU uses to prepare the next instruction in RAM
+
+\item LOAD: LD\\
+  \begin{tabularx}{\textwidth}{|X|X|X|}
+    \hline 101 & x & xxxx
+    \\ \hline Op-Code & Register & Address
+    \\ \hline 0-2 & 3 & 4-7
+    \\ \hline
+  \end{tabularx}
+The address is sent to the MAR, which is then sent to the AR. The MODE is set to read mode and the contents located at the specified address are sent to the DR, then to the MBR. Then, the contents of the MBR are sent to the specified register.
+
+\item STORE: STR\\
+  \begin{tabularx}{\textwidth}{|X|X|X|}
+    \hline 111 & x & xxxx
+    \\ \hline Op-Code & Register & Address
+    \\ \hline 0-2 & 3 & 4-7
+    \\ \hline
+  \end{tabularx}
+The contents of the specified register are sent to the MBR. The address is sent to the MAR, which is then sent to the AR. The MODE is set to write mode and the contents of the MBR are sent to the DR, which then sends the contents to the byte of RAM at the specified address.
+
+\item ADD: ADD\\
+  \begin{tabularx}{\textwidth}{|X|X|}
+    \hline 0010 & x
+    \\ \hline Op-Code & Register to store into
+    \\ \hline 0-3 & 4
+    \\ \hline
+  \end{tabularx}
+The contents of D0 are sent to the ALU through the bus. The contents of D1 are also sent to the ALU through the bus. For both of these, the CU activates the output mode on D0 and D1. Then, the ALU is set to add mode and the addition is done. Then, the result is sent to D0 through the bus and by activating the input mode on D0.
+
+\item SUBTRACT: SUB\\
+  \begin{tabularx}{\textwidth}{|X|X|}
+    \hline 0011 & x
+    \\ \hline Op-Code & Register to store into
+    \\ \hline 0-3 & 4
+    \\ \hline
+  \end{tabularx}
+The contents of D0 are sent to the ALU through the bus. The contents of D1 are also sent to the ALU through the bus. For both of these, the CU activates the output mode on D0 and D1. Then, the ALU is set to subtract mode and the addition is done. Then, the result is sent to D0 through the bus and by activating the input mode on D0.  
+
+\item Branch equal: BEQ\\
+  \begin{tabularx}{\textwidth}{|X|X|}
+    \hline 0100 & x
+    \\ \hline Op-Code & Address
+    \\ \hline 0-3 & 4-7
+    \\ \hline
+  \end{tabularx}
+The contents of D0 and D1 are directly sent to a comparison checker. When they are equal, it outputs TRUE, and this output is sent to the PC. When/if it receives this TRUE signal, it will load the adress specified.
+  
+\item Branc not equal: BNQ\\
+  \begin{tabularx}{\textwidth}{|X|X|}
+    \hline 0101 & x
+    \\ \hline Op-Code & Address
+    \\ \hline 0-3 & 4-7
+    \\ \hline
+  \end{tabularx}
+The contents of D0 and D1 are directly sent to a comparison checker. When they are not equal, it outputs TRUE, and this output is sent to the PC. When/if it receives this TRUE signal, it will load the adress specified.
+
+\item PRINT: PRT\\
+  \begin{tabularx}{\textwidth}{|X|X|}
+    \hline 0110 & x
+    \\ \hline Op-Code & Register to display
+    \\ \hline 0-3 & 4
+    \\ \hline
+  \end{tabularx}
+The contents of the specified register are sent to the MBR through the bus, which are then sent to the Display Companion Register through the bus. Then, the display will show whatever is stored in the register.
+
+\item INPUT: INP\\
+  \begin{tabularx}{\textwidth}{|X|X|}
+    \hline 0111 & x
+    \\ \hline Op-Code & Register to store into
+    \\ \hline 0-3 & 4
+    \\ \hline
+  \end{tabularx}
+The input is converted to binary and sent to the MBR through the bus, which is then sent to the specified register through the bus.
+
+\item STOP: STOP\\
+  \begin{tabularx}{\textwidth}{|X|}
+    \hline 1000
+    \\ \hline Op-Code
+    \\ \hline 0-3
+    \\ \hline
+  \end{tabularx}
+Permanently activates a pin in the CPU, which prevents the CYCLE command from being executed and therefore stops the program.
+
+\item MULTIPLICATION: MULT\\
+  \begin{tabularx}{\textwidth}{|X|X|X|}
+    \hline 1001 & x & xxx
+    \\ \hline Op-Code & Register to store into & Constant
+    \\ \hline 0-3 & 4 & 5-7
+    \\ \hline
+  \end{tabularx}
+  
+\end{enumerate}
+	
+\end{document}
