@@ -152,6 +152,7 @@ Permanently activates a pin in the CPU, which prevents the CYCLE command from be
     \\ \hline 0-3 & 4 & 5-7
     \\ \hline
   \end{tabularx}
+The contents of the specified register are sent to the left temporary register of the ALU. The instruction is sent to the CU, which isolates the constant stored within the instruction. Both of these are sent to the MULT calculator, which performs the operation and sends the output to the MBR, which then gets sent back to the specified register.
   
 \end{enumerate}
 	
