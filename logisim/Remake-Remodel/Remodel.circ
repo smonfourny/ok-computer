@@ -2392,6 +2392,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(890,180)" to="(890,1390)"/>
     <wire from="(2880,1850)" to="(3050,1850)"/>
     <wire from="(2560,2110)" to="(2660,2110)"/>
+    <wire from="(1650,180)" to="(1650,1110)"/>
     <wire from="(4890,110)" to="(4900,110)"/>
     <wire from="(3100,180)" to="(3100,390)"/>
     <wire from="(2240,2110)" to="(2340,2110)"/>
@@ -2536,6 +2537,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(3760,1270)" to="(4920,1270)"/>
     <wire from="(1910,1730)" to="(2270,1730)"/>
     <wire from="(1240,1600)" to="(1240,1620)"/>
+    <wire from="(1650,1110)" to="(2580,1110)"/>
     <wire from="(5160,80)" to="(5160,150)"/>
     <wire from="(2110,1830)" to="(2110,1870)"/>
     <wire from="(1880,1600)" to="(1880,1620)"/>
