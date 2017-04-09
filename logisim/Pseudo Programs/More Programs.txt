@@ -1,0 +1,5 @@
+Multiply a stored constant by input, but using MULT (equivalent to required program, but uses MULT)
+0000 0111 1000 # Load input into D1
+0001 1001 1110 # D1=D1 x constant (6)
+0010 0110 1000 # Print D1
+0100 1000 0000 # Stop
