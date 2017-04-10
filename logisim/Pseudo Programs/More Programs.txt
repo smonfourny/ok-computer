@@ -2,4 +2,17 @@ Multiply a stored constant by input, but using MULT (equivalent to required prog
 0000 0111 1000 # Load input into D1
 0001 1001 1110 # D1=D1 x constant (6)
 0010 0110 1000 # Print D1
-0100 1000 0000 # Stop
+0011 1000 0000 # Stop
+
+Countdown from 255 to 1
+0000 1010 1000 # Load current number into D0
+0001 0110 0000 # Print D0
+0010 1011 1001 # Load 1 into D1
+0011 0100 0111 # BEQ, STOP if current number is 1
+0100 0011 0000 # D0 = D0 - D1
+0101 1011 1010 # Load 0 into D1
+0110 0101 0001 # BNEQ, jump to beginning
+0111 1000 0000 # STOP
+1000 1111 1111 # Current number
+1001 0000 0001 # One
+1010 0000 0000 # Zero

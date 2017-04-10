@@ -1,0 +1,17 @@
+\contentsline {section}{\numberline {1}CPU Structure}{1}
+\contentsline {paragraph}{Power}{1}
+\contentsline {paragraph}{RAM}{1}
+\contentsline {paragraph}{MAR/MBR}{1}
+\contentsline {paragraph}{PC \& INC}{2}
+\contentsline {paragraph}{IR}{2}
+\contentsline {paragraph}{ALU}{2}
+\contentsline {paragraph}{Mult \& EQ}{3}
+\contentsline {paragraph}{General Purpose Registers}{3}
+\contentsline {paragraph}{CU}{4}
+\contentsline {paragraph}{Display}{4}
+\contentsline {paragraph}{Keypad}{5}
+\contentsline {section}{\numberline {2}Programs}{5}
+\contentsline {subsection}{\numberline {2.1}Required Program}{5}
+\contentsline {subsection}{\numberline {2.2}Modified Required Program}{6}
+\contentsline {subsection}{\numberline {2.3}Countdown}{6}
+\contentsline {section}{\numberline {3}Description of Instructions}{6}
