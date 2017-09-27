@@ -1,4 +1,3 @@
-# COMP 273 - Classical CPU Project
+# Classical CPU Project
 
-## Useful addresses
-[Trello Board](https://trello.com/b/zaaR1rWW)
+[Short demo](https://youtu.be/_B-b7udOC4k)
